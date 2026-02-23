@@ -143,7 +143,7 @@ graph LR
 ## 📦 구성 요소
 
 <p align="center">
-  <img src="docs/features-grid.png" alt="Claude Forge 구성 요소" width="720">
+  <img src="docs/features-grid.jpg" alt="Claude Forge 구성 요소" width="720">
 </p>
 
 | 카테고리 | 수량 | 주요 항목 |
@@ -316,7 +316,7 @@ claude-forge/
 ### 보안 훅
 
 <p align="center">
-  <img src="docs/security-layers.png" alt="보안 방어 훅" width="720">
+  <img src="docs/security-layers.jpg" alt="보안 방어 훅" width="480">
 </p>
 
 모든 작업이 계층형 보안 훅을 통과합니다:

@@ -133,6 +133,10 @@ Parallel multi-agent execution for complex tasks:
 
 ## 📦 What's Inside
 
+<p align="center">
+  <img src="docs/features-grid.jpg" alt="Claude Forge Components" width="720">
+</p>
+
 | Category | Count | Highlights |
 |:--------:|:-----:|:-----------|
 | **Agents** | 11 | `planner` `architect` `code-reviewer` `security-reviewer` `tdd-guide` `database-reviewer` + 5 more |
@@ -282,6 +286,10 @@ claude-forge/
 ## 🛡 Automation Hooks
 
 ### Security Hooks
+
+<p align="center">
+  <img src="docs/security-layers.jpg" alt="6-Layer Security Defense" width="480">
+</p>
 
 | Hook | Trigger | Protects Against |
 |:-----|:--------|:-----------------|
