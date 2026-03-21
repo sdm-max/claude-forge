@@ -5,24 +5,17 @@
 
 ## Agent Teams
 
-### 전제조건 (CRITICAL)
+### 전제조건
 
-Agent Teams는 실험적이며 기본 비활성화 상태. 반드시 활성화 필요:
+settings.json에 아래 환경변수가 설정되어 있어야 한다:
 
 ```json
-// settings.json
 {
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
   }
 }
 ```
-
-### 토큰 비용 경고
-
-Agent Teams는 단일 세션보다 **훨씬 더 많은 토큰**을 사용한다.
-각 팀원은 자신의 컨텍스트 윈도우를 가지며, 비용은 활성 팀원 수에 비례.
-일상적 작업은 단일 세션이 더 비용 효율적.
 
 ### 컨텍스트 상속 (CRITICAL)
 
