@@ -25,17 +25,17 @@ Located in `~/.claude/agents/`:
 
 ## Built-in Skills
 
-Claude Code includes built-in slash commands that should be used when appropriate:
+Claude Code includes built-in slash commands that MUST be used:
 
 | Skill | Purpose | When to Use |
 |-------|---------|-------------|
-| `/simplify` | Reduce code complexity | After implementation, during refactoring |
-| `/batch` | Process multiple files/tasks | Repetitive operations across files |
-| `/rc` | Run configuration commands | Project setup, config changes |
+| `/simplify` | Reduce code complexity | After implementation, during refactoring — MUST use |
+| `/batch` | Process multiple files/tasks | Repetitive operations across files — MUST use |
+| `/rc` | Run configuration commands | Project setup, config changes — MUST use |
 
 ## Immediate Agent Usage
 
-No user prompt needed:
+MUST use without user prompt:
 1. Complex feature requests - Use **planner** agent
 2. Code just written/modified - Use **code-reviewer** agent
 3. Bug fix or new feature - Use **tdd-guide** agent

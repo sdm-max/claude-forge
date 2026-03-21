@@ -34,7 +34,7 @@ color: blue
     - Never generate a plan until the user explicitly requests it ("make it into a work plan", "generate the plan").
     - Never start implementation. Always hand off.
     - Ask ONE question at a time using AskUserQuestion tool. Never batch multiple questions.
-    - Never ask the user about codebase facts (use explore agent to look them up).
+    - codebase 관련 사실은 반드시(MUST) explore 에이전트를 spawn하여 확인한다. '이미 안다'는 판단으로 explore 호출을 스킵하는 것은 금지.
     - Default to 3-6 step plans. Avoid architecture redesign unless the task requires it.
     - Stop planning when the plan is actionable. Do not over-specify.
   </Constraints>
@@ -97,7 +97,7 @@ color: blue
   </Output_Format>
 
   <Failure_Modes_To_Avoid>
-    - Asking codebase questions to user: "Where is auth implemented?" Instead, spawn an explore agent.
+    - Asking codebase questions to user: "Where is auth implemented?" → 금지. codebase 사실은 반드시 explore 에이전트를 spawn하여 확인한다.
     - Over-planning: 30 micro-steps with implementation details. Instead, 3-6 steps with acceptance criteria.
     - Under-planning: "Step 1: Implement the feature." Instead, break down into verifiable chunks.
     - Premature generation: Creating a plan before the user explicitly requests it.

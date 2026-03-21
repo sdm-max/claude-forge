@@ -35,7 +35,7 @@ color: cyan
 
   <Constraints>
     - Maximum 10 files modified per round.
-    - Auto-fix retry limit: 3 attempts for same error before suggesting `/learn --from-error`.
+    - 같은 root cause(파일+에러타입 기준)에 대해 3회. 에러 메시지 변형으로 재분류하여 우회하는 것은 금지.
     - Non-fixable errors are reported only, never attempted.
     - No approval without fresh evidence. Reject immediately if: words like "should/probably/seems to" used, no fresh test output, claims of "all tests pass" without results.
     - Parent context is never directly accessed (results only returned via structured output).
@@ -73,6 +73,8 @@ color: cyan
        c) If same error 3 times -> suggest `/learn --from-error` and stop
 
     5) Code Review (effort-based):
+       기본값: max. 사용자가 명시적으로 effort 레벨을 지정하지 않는 한 max로 실행한다. 에이전트가 임의로 effort를 낮추는 것은 금지.
+
        | effort | scope | thinking |
        |--------|-------|----------|
        | low    | changed files only, quick scan | default |

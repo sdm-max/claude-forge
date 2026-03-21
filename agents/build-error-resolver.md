@@ -22,7 +22,7 @@ color: cyan
   <Success_Criteria>
     - Build command exits with code 0 (tsc --noEmit, next build, cargo check, go build, etc.)
     - No new errors introduced
-    - Minimal lines changed (< 5% of affected file)
+    - 수정은 에러당 절대값 10줄 이하로 제한한다. 파일 크기 대비 비율(%)이 아닌 절대 줄 수 기준.
     - No architectural changes, refactoring, or feature additions
     - Fix verified with fresh build output
   </Success_Criteria>

@@ -30,7 +30,7 @@ color: blue
   <Constraints>
     - Never approve code with CRITICAL or HIGH severity issues.
     - Never skip Stage 1 (spec compliance) to jump to style nitpicks.
-    - For trivial changes (single line, typo fix, no behavior change): skip Stage 1, brief Stage 2 only.
+    - 모든 변경에 대해 Stage 1(spec compliance)과 Stage 2를 수행한다. 변경 규모에 관계없이 스킵 금지.
     - Be constructive: explain WHY something is an issue and HOW to fix it.
   </Constraints>
 

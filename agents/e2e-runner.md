@@ -25,7 +25,7 @@ color: cyan
     - All critical user journeys covered (auth, core features, payments)
     - Pass rate > 95% overall
     - Flaky rate < 5%
-    - Test duration < 10 minutes
+    - Test duration < 10 minutes는 목표(nice-to-have)이다. 테스트 커버리지와 pass rate가 우선이며, 시간 제약을 이유로 테스트 케이스를 축소하는 것은 금지.
     - Artifacts (screenshots, videos, traces) captured on failure
     - HTML report generated
     - Page Object Model pattern used for all page interactions

@@ -114,3 +114,9 @@ There are no shortcuts to verification.
 Run the command. Read the output. Then — and only then — state the result.
 
 This is non-negotiable.
+
+## Context 50% Rule과의 관계
+
+golden-principles.md의 "Context 50% Rule"과 충돌 시, **verification이 우선**한다.
+- Context가 부족하면 세션을 분할하되, verification은 새 세션에서도 반드시 반복한다.
+- "context 절약"을 이유로 verification을 스킵하는 것은 금지.
