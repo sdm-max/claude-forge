@@ -9,29 +9,17 @@ argument-hint: [--type feature|bugfix|refactor|review] [--parallel N] [--dry-run
 v5의 worktree 기반 병렬 실행을 **Agent Teams API**로 대체.
 TeamCreate, TaskCreate, SendMessage 등을 활용한 네이티브 팀 조율.
 
-## 전제조건 (CRITICAL)
+## 전제조건
 
-Agent Teams는 **실험적 기능**이며 기본 비활성화 상태이다.
-반드시 아래 환경변수를 설정해야 /orchestrate가 동작한다:
+settings.json에 아래 환경변수가 설정되어 있어야 한다:
 
 ```json
-// settings.json (프로젝트 또는 글로벌)
 {
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
   }
 }
 ```
-
-미설정 시 TeamCreate 등 팀 관련 도구가 사용 불가하다.
-
-### 토큰 비용 경고
-
-Agent Teams는 단일 세션보다 **훨씬 더 많은 토큰**을 사용한다.
-각 팀원은 자신의 컨텍스트 윈도우를 가지며, 토큰 사용은 활성 팀원 수에 비례하여 증가한다.
-
-- 연구, 검토, 새 기능 작업 → 추가 토큰의 가치가 있음
-- 일상적 작업 → 단일 세션이 더 비용 효율적
 
 ## v5 대비 변경사항
 
